@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Bruna Valtrick</title>
+    <meta
+      name="description"
+      content="Entre em contato para falar sobre artigos, materiais ricos e conteúdo para redes sociais."
+    />
+    <link rel="icon" type="image/jpeg" href="favicon/favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600;700&family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">B.V <span>txt</span> 🖊️</a>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <nav id="menu" class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Contato :)</span>
+          <h1>Vamos conversar?</h1>
+          <p>Conte sobre o seu projeto e vamos pensar juntas nas palavras certas.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact">
+          <div class="contact-info reveal">
+            <h2>Fale comigo</h2>
+            <p>
+              Preencha o formulário ou me chame pelos canais abaixo. Adoro
+              conhecer projetos novos!
+            </p>
+            <ul>
+              <li>
+                <ion-icon name="mail-outline"></ion-icon>
+                <!-- TROQUE pelo seu e-mail real (e também no script.js) -->
+                <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+              <li>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
+              <li>
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <a href="https://brunaportfolios.tumblr.com" target="_blank" rel="noopener noreferrer">Portfólio no Tumblr</a>
+              </li>
+            </ul>
+          </div>
+
+          <form id="form-contato" class="form reveal" novalidate>
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required />
+              <span class="error-msg">Por favor, informe seu nome.</span>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <span class="error-msg">Informe um e-mail válido.</span>
+            </div>
+            <div class="field">
+              <label for="assunto">Assunto</label>
+              <input type="text" id="assunto" name="assunto" required />
+              <span class="error-msg">Qual é o assunto da mensagem?</span>
+            </div>
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+              <span class="error-msg">Escreva sua mensagem.</span>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar mensagem</button>
+            <p id="form-feedback" class="form-feedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>B.V txt 🖊️</strong>
+          <p>Redação, SEO e escrita criativa.</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://brunaportfolios.tumblr.com" target="_blank" rel="noopener noreferrer" aria-label="Portfólio"><ion-icon name="bookmark"></ion-icon></a>
+        </div>
+        <p class="copy">&copy; <span id="ano">2026</span> Bruna Valtrick. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
